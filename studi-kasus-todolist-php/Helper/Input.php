@@ -2,7 +2,7 @@
 
 function input(string $info): string
 {
-    echo $info;
+    echo "$info : ";
     $result = fgets(STDIN);
-    return $result;
+    return trim($result);
 }
