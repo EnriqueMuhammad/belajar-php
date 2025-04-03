@@ -20,6 +20,13 @@ class Person
         $this->address = $address;
     }
 
+    //destructor
+    function __destruct()
+    {
+        //Destructor adalah function yang dipanggil ketika object dihapus dari memory
+        echo "Object $this->name is destroyed" . PHP_EOL;
+    }
+    
     //Function untuk menampilkan nama
     //Nullable string type, jika tidak ada parameter maka harus null
     function sayHello(?string $name)
